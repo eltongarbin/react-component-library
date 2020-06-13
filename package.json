@@ -11,7 +11,10 @@
     "build-storybook": "build-storybook",
     "build": "rollup -c",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "format": "prettier --write src/**/*.{js,tsx,scss}",
+    "format:watch": "onchange 'src/**/*.{js,tsx,scss}' -- prettier --write {{changed}}",
+    "format:check": "prettier --list-different src/**/*.{js,tsx,scss}"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -30,8 +33,11 @@
     "@types/react": "^16.9.36",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
+    "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rollup": "^2.16.0",
@@ -55,5 +61,13 @@
   },
   "homepage": "https://github.com/eltongarbin/react-component-library#readme",
   "dependencies": {},
-  "description": ""
+  "description": "",
+  "prettier": {
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
 }
