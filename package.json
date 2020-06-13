@@ -9,6 +9,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -27,6 +28,7 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.0.1",
     "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@testing-library/jest-dom": "^5.10.0",
     "@testing-library/react": "^10.2.1",
     "@types/jest": "^26.0.0",
