@@ -1,7 +1,6 @@
 {
-  "name": "react-component-library",
+  "name": "@eltongarbin/react-component-library",
   "version": "1.0.0",
-  "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
@@ -13,6 +12,9 @@
     "build": "rollup -c",
     "test": "jest",
     "test:watch": "jest --watch"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [],
   "author": "",
@@ -43,5 +45,15 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eltongarbin/react-component-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eltongarbin/react-component-library/issues"
+  },
+  "homepage": "https://github.com/eltongarbin/react-component-library#readme",
+  "dependencies": {},
+  "description": ""
 }
