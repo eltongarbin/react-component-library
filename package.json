@@ -1,6 +1,6 @@
 {
   "name": "@eltongarbin/react-component-library",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
