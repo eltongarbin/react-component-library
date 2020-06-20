@@ -17,9 +17,6 @@
     "format:watch": "onchange 'src/**/*.{js,tsx,scss}' -- prettier --write {{changed}}",
     "format:check": "prettier --list-different src/**/*.{js,tsx,scss}"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -54,10 +51,7 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eltongarbin/react-component-library.git"
-  },
+  "repository": "git+https://github.com/eltongarbin/react-component-library.git",
   "bugs": {
     "url": "https://github.com/eltongarbin/react-component-library/issues"
   },
